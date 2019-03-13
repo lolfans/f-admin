@@ -31,4 +31,5 @@ Route::group(['middleware' => ['auth', 'permission']], function () {
     Route::post('/saveinfo/{type}',     'UserController@saveInfo');
     Route::resource('/roles',           'RoleController');
     Route::resource('/permissions',     'PermissionController');
+    Route::resource('/list',            'ApplicationController');
 });
